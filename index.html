@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MexLabs • MexStreams</title>
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            max-width: 1100px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+            background: #0f0f0f; 
+            color: #ddd; 
+        }
+        h1 { color: #fff; text-align: center; }
+        .intro { text-align: center; margin-bottom: 30px; }
+        a { color: #4da6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        .section, .subsection {
+            margin: 20px 0;
+            background: #1a1a1a;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .header, .subheader {
+            padding: 18px 22px;
+            background: #222;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header { font-size: 1.35em; }
+        .subheader { font-size: 1.1em; background: #2a2a2a; }
+        .header:hover, .subheader:hover { background: #333; }
+        
+        .content, .subcontent {
+            padding: 0 22px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.35s ease;
+        }
+        .content.open, .subcontent.open {
+            padding: 22px;
+            max-height: 5000px;
+        }
+        .arrow {
+            transition: transform 0.3s ease;
+            font-size: 1.2em;
+        }
+        .open .arrow { transform: rotate(180deg); }
+        ul { padding-left: 22px; }
+        li { margin: 8px 0; }
+        .star { color: gold; }
+        footer { text-align: center; margin-top: 80px; color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>MexLabs • MexStreams</h1>
+    <div class="intro">
+        <p><strong>Will update as available..</strong></p>
+        <p><a href="https://fmhy.net/" target="_blank">Original Site</a> • <a href="https://github.com/fmhy/FMHY" target="_blank">Full GitHub Source</a></p>
+    </div>
+
+    <!-- Main Categories -->
+    <div class="section">
+        <div class="header" onclick="toggleMain(this)">📺 Streaming <span class="arrow">▼</span></div>
+        <div class="content">
+            <div class="subsection">
+                <div class="subheader" onclick="toggleSub(this)">Movies & TV Shows <span class="arrow">▼</span></div>
+                <div class="subcontent">
+            <ul>
+               <li><span class="star">⭐</span> 
+                <a href="https://myflixer.sc/home" target="_blank">MyFlixer</a> - Movies / TV / 4K / Auto-Next</li> 
+
+               <li><span class="star">⭐</span> 
+                <a href="https://dulo.tv" target="_blank">Dulo</a> - Movies / TV / 4K / Auto-Next</li> 
+
+               <li><span class="star">⭐</span> 
+                <a href="https://hdtoday.sc/home" target="_blank">HDToday</a> - Movies / TV / 4K / Auto-Next</li> 
+
+               <li><span class="star">⭐</span> 
+                <a href="https://www.skyflix.to" target="_blank">Skyflix</a> - Movies / TV / 4K / Auto-Next</li> 
+
+               <li><span class="star">⭐</span> 
+                <a href="https://www.nightflix.to" target="_blank">Nightflix</a> - Movies / TV / 4K / Auto-Next</li>
+
+                <li><span class="star">⭐</span> 
+                <a href="https://www.cineby.at" target="_blank">Cineby</a>, 
+                <a href="https://www.cineplay.to" target="_blank">Cineplay</a>,
+                <a href="https://www.fmovies.gd" target="_blank">FMovies</a> - Movies / TV / 4K / Auto-Next</li>
+                <li><span class="star">⭐</span> 
+                <a href="https://www.rivestream.app" target="_blank">RiveStream</a>, 
+                <a href="https://rivestream.ru" target="_blank">2</a>,
+                <a href="https://rivestream.vip" target="_blank">3</a> or 
+                <a href="https://watch.corsflix.net" target="_blank">CorsFlix</a>, 
+                <a href="https://corsflix.net" target="_blank">2</a>,
+                <a href="https://watch.corsflix.dpdns.org" target="_blank">3</a> - Movies / TV / 4K / Auto-Next</li>                
+               <li><span class="star">⭐</span> 
+                <a href="https://popcornmovies.org" target="_blank">Popcorn Movies</a> or 
+                <a href="https://bingebox.to" target="_blank">Bingebox</a> - Movies / TV / 4K / Auto-Next</li>
+               <li><span class="star">⭐</span> 
+                <a href="https://flixer.su" target="_blank">Flixer</a> or 
+                <a href="https://hexa.su" target="_blank">Hexa</a> - Movies / TV / 4K / Auto-Next</li>
+               <li><span class="star">⭐</span> 
+                <a href="https://flixer.su" target="_blank">bCine</a> - Movies / TV / 4K / Auto-Next</li>
+                <li><span class="star">⭐</span> 
+                <a href="https://flickystream.su" target="_blank">FlickyStream</a>, 
+                <a href="https://meowtv.ru" target="_blank">MeowTV</a>or
+                <a href="https://cinemora.ru" target="_blank">CineMora</a> - Movies / TV / 4K / Auto-Next</li>         
+                <li><span class="star">⭐</span> 
+                <a href="https://cinevibe.asia" target="_blank">Cinevibe</a>, 
+                <a href="https://cinevibe.site" target="_blank">2</a>,
+                <a href="https://cinevibe.icu" target="_blank">3</a> - Movies / TV / 4K / Auto-Next</li>
+               <li><span class="star">⭐</span> 
+                <a href="https://popr.ink" target="_blank">Poprink</a> - Movies / TV / 4K / Auto-Next</li>
+               <li><span class="star">⭐</span> 
+                <a href="https://coreflix.tv" target="_blank">Coreflix</a> - Movies / TV / 4K / Auto-Next</li>                      
+               <li><span class="star">⭐</span> 
+                <a href="https://vyla.pages.dev" target="_blank">Vyla</a> - Movies / TV / 4K / Auto-Next</li>                      
+                <li><span class="star">⭐</span> 
+                <a href="https://shuttletv.su" target="_blank">ShuttleTV</a>, 
+                <a href="https://shuttletv.pk" target="_blank">2</a> - Movies / TV / 4K / Auto-Next</li>
+               <li><span class="star">⭐</span> 
+                <a href="https://cinegram.tv" target="_blank">Cinegram</a> - Movies / TV / 4K / Auto-Next</li> 
+               <li><span class="star">⭐</span> 
+                <a href="https://lordflix.org" target="_blank">Lordflix</a> - Movies / TV / 4K / Auto-Next</li> 
+                <li><span class="star">⭐</span> 
+                <a href="https://arrowtv.net" target="_blank">ArrowTV</a>, 
+                <a href="https://www.cinezo.net" target="_blank">Cinezo</a>,
+                <a href="https://www.flikhub.net" target="_blank">Flikhub</a> - Movies / TV / 4K / Auto-Next</li>
+</ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <div class="subheader" onclick="toggleSub(this)">Sports and Live TV<span class="arrow">▼</span></div>
+                <div class="subcontent">
+                    <ul>
+                        <li><span class="star">⭐</span> <a href="https://streamsports99.su" target="_blank">StreamSports99</a></li>
+                <li><span class="star">⭐</span> 
+                <a href="https://dlhd.pk//24-7-channels.php" target="_blank">DaddyLiveTV</a>, 
+                <a href="https://daddylive.pk" target="_blank">2</a></li>                        <li><span class="star">⭐</span> <a href="https://famelack.com" target="_blank">Famelack</a></li>
+                <li><span class="star">⭐</span> 
+                <a href="https://zhangboheng.github.io/Easy-Web-TV-M3u8/routes/tv.html" target="_blank">EasyWebTV</a>, or
+                <a href="https://iptv-web.app" target="_blank">IPTV Web</a></li>  
+                        <li><span class="star">⭐</span> <a href="https://titantv.com" target="_blank">TitanTV</a></li>
+                        <li><span class="star">⭐</span> <a href="https://tvfreedom.surge.sh" target="_blank">TVFreedom</a></li>
+                        <li><span class="star">⭐</span> <a href="https://www.1tube.org/live-tv" target="_blank">1Tube</a></li>
+                <li><span class="star">⭐</span> 
+                <a href="https://sportsbite.lol/" target="_blank">SportsBite</a>, 
+                <a href="https://sportsbite.xyz/" target="_blank">2</a></li>                        <li><span class="star">⭐</span> <a href="https://play.xumo.com/networks" target="_blank">XumoPlay</a></li>
+                        <li><span class="star">⭐</span> <a href="https://dami-tv.pro/livetv" target="_blank">DamiTV</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subsection">
+                <div class="subheader" onclick="toggleSub(this)">Other and Cartoons <span class="arrow">▼</span></div>
+                <div class="subcontent">
+                    <ul>
+                        <li><a href="https://www.wco.tv" target="_blank">WCO</a></li>
+                    </ul>
+                </div>
+            </div>        </div>
+    </div>
+
+
+    <footer>
+        <p><br>
+        </p>
+    </footer>
+
+    <script>
+        function closeAllMains() {
+            document.querySelectorAll('.content').forEach(c => {
+                c.classList.remove('open');
+                const h = c.previousElementSibling;
+                if (h) h.classList.remove('open');
+            });
+        }
+
+        function closeAllSubs() {
+            document.querySelectorAll('.subcontent').forEach(c => {
+                c.classList.remove('open');
+                const h = c.previousElementSibling;
+                if (h) h.classList.remove('open');
+            });
+        }
+
+        function toggleMain(header) {
+            const content = header.nextElementSibling;
+            const isOpen = content.classList.contains('open');
+            closeAllMains();
+            closeAllSubs();
+            if (!isOpen) {
+                content.classList.add('open');
+                header.classList.add('open');
+            }
+        }
+
+        function toggleSub(header) {
+            const content = header.nextElementSibling;
+            const isOpen = content.classList.contains('open');
+            closeAllSubs();
+            if (!isOpen) {
+                content.classList.add('open');
+                header.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
